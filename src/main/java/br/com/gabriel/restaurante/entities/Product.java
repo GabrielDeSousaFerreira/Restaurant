@@ -13,13 +13,18 @@ public class Product {
     private String description;
     private double price;
 
+    @Enumerated(EnumType.STRING)
+    private Categories categories;
+
     public Product() {
     }
 
-    public Product(String name, String description, double price) {
+    public Product(String name, String description, double price, Categories categories) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
+        this.categories = categories;
     }
 
     public Long getId() {
@@ -52,5 +57,13 @@ public class Product {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public Categories getCategories() {
+        return categories;
+    }
+
+    public void setCategories(Categories categories) {
+        this.categories = categories;
     }
 }
