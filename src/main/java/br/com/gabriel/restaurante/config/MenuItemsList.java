@@ -44,8 +44,6 @@ public class MenuItemsList implements CommandLineRunner {
                 new Product("Petit Gateau - ", "Bolinho quente de chocolate com recheio cremoso acompanhado de sorvete.", 16.89, Categories.DESSERTS),
                 new Product("Açai - ", "Acompnhado com leite em pó, banana, leite condensado, granola.", 13.49, Categories.DESSERTS)
             ));
-
-            //p1, p2 , p3, p4, p5, p6, p7, b1, b2, b2, b3, b4, b5, b6, b7, s1, s2, s3, s4
         }
     }
 }

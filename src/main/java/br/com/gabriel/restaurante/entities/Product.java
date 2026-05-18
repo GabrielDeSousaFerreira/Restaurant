@@ -13,11 +13,11 @@ public class Product {
     private String description;
     private double price;
 
+    public Product(){
+    }
+
     @Enumerated(EnumType.STRING)
     private Categories categories;
-
-    public Product() {
-    }
 
     public Product(String name, String description, double price, Categories categories) {
         this.id = id;
